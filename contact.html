@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+<style>
+     body {
+      font-family: 'sans-serif';
+      background: linear-gradient(to right, #74ebd5, #9face6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  .contact-section {
+    background-color: #f0f8ff;
+    padding: 50px 470px;
+    text-align: center;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+  }
+
+  .contact-container {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .contact-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+
+  .contact-form button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color: #357ab8;
+  }
+  .navbar {
+             position: fixed;
+             top:0;
+             width: 100%;
+              background-color: #ffffffc8;
+             transition: background-color 0.3s ease;
+             z-index: 1000;
+            }
+            .navbar a::before {
+             content: "";
+             position: absolute;
+             left: 0;
+             top: 0;
+             width: 100%;
+             height: 100%;
+             background: #738ea32a;
+             border-radius: 5px;
+              box-shadow: 0px 5px 10px rgba(75, 91, 123, 0.136);
+             z-index: -1;
+             transform: scaleY(0.6);
+             opacity: 0;
+             transition: transform 0.24s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.2s;
+            }
+            .navbar a:hover::before,
+            .navbar a:focus::before {
+             transform: scaleY(1);
+             opacity: 1;
+            }
+            .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            }
+
+            .navbar li {
+             margin: 0 20px;
+            }
+
+           .navbar a {
+             display: block;
+            padding: 15px 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+           }
+
+           .navbar a:hover {
+             color: #2f83cd;
+             transform: scale(1.20);
+            }
+
+       .content {
+          padding-top: 40px;
+          height: 2000px;
+        } 
+       .navbar-b {
+            color: rgba(91, 200, 214, 0.895);
+            background-color: #738ea32a;
+            background-size: 10px;
+       }
+</style>
+</head>
+
+<body>
+    <section class="contact-section">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Fill out the form below and we’ll get back to you shortly.</p>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+ <nav class="navbar" id="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="t&c.html">Terms & Conditions</a></li>
+      <li><a href="contact.html" class="navbar-b" >Contact</a></li>
+      <li><a href="signup.html" >Sign Up</a></li>
+      <li><a href="login.html">Login</a></li>  
+    </ul>
+  </nav>
+
+</body>
+
+

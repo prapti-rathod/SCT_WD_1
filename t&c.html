@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+  <meta charset="UTF-8" />
+  <meta name="viewpoint" content="'width=device-width, initial-scale=1.0" />
+  <title>Terms & Condition</title>
+
+</head>
+
+<section class="terms-panel">
+  <div class="terms-container">
+    <h2>Terms & Conditions</h2>
+    <p class="intro">
+      By accessing and using our website, you agree to comply with the following terms and conditions. These terms govern your use of our educational content, business services, and digital resources.
+    </p>
+
+    <ul class="terms-list">
+      <li><strong>Use of Content:</strong> All materials provided are for personal and professional development. Redistribution or commercial use without permission is prohibited.</li>
+      <li><strong>Account Responsibility:</strong> Users are responsible for maintaining the confidentiality of their login credentials and for all activities under their account.</li>
+      <li><strong>Service Availability:</strong> We strive to ensure uninterrupted access, but we do not guarantee that services will be available at all times.</li>
+      <li><strong>Intellectual Property:</strong> All content, including courses, graphics, and branding, is owned by us or licensed appropriately. Unauthorized use is strictly prohibited.</li>
+      <li><strong>Privacy Policy:</strong> Your data is handled in accordance with our privacy policy. By using the site, you consent to data collection as described.</li>
+      <li><strong>Modifications:</strong> We reserve the right to update these terms at any time. Continued use of the site implies acceptance of any changes.</li>
+    </ul>
+
+    <div class="acknowledgment">
+      <p>By continuing to use our platform, you acknowledge that you have read, understood, and agreed to these terms.</p>
+      <button>Accept & Continue</button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .terms-panel {
+    padding: 20px 0px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+  }
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .terms-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+  }
+
+  .terms-container h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  .intro {
+    font-size: 1.1em;
+    margin-bottom: 35px;
+    color: #555;
+    text-align: center;
+  }
+
+  .terms-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .terms-list li {
+    margin-bottom: 15px;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .terms-list strong {
+    color: #4a90e2;
+  }
+
+  .acknowledgment {
+    text-align: center;
+  }
+
+  .acknowledgment p {
+    font-size: 1em;
+    margin-bottom: 25px;
+    color: #444;
+  }
+
+  .acknowledgment button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+    .acknowledgment button:hover {
+    background-color: #2980b9;
+  }
+ 
+.navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            
+            background-color: #fafafae0;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
+        .navbar a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            background: #738ea32a;
+            border-radius: 5px;
+            box-shadow: 0px 5px 10px rgba(75, 91, 123, 0.136);
+            z-index: -1;
+            transform: scaleY(0.6);
+            opacity: 0;
+            transition: transform 0.24s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.2s;
+            
+        }
+        .navbar a:hover::before,
+        .navbar a:focus::after {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            margin: 0 20px;
+        }
+        .navbar a {
+            display: block;
+            padding: 15px 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+       .navbar a:hover {
+            color: #2f83cd;
+            transform: scale(1.20);
+        }
+        .content {
+            padding-top: 40px;
+            height: 2000px;
+        }
+        .navbar-b {
+            color: rgba(91, 200, 214, 0.895);
+            background-color: #738ea32a;
+             background-size: 10px;
+        }
+ 
+</style>
+
+<body>
+    <nav id="navbar" class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="t&c.html" class="navbar-b">Terms & Conditions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="login.html">Login</a></li>  
+    </ul>
+  </nav>
+  
+<script>
+    window.addEventListener('scroll', function () {
+                const navbar = document.getElementById('navbar');
+                   if (window.scrollY > 50) {
+                       navbar.classList.add('scrolled');
+                   } else {
+                      navbar.classList.remove('scrolled');
+                   }
+                });
+</script>
+
+  </body>
+</html>

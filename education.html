@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="eng">
+ 
+  <meta charset="UTF-8" />
+  <title>Education</title>
+
+
+
+<section class="education-panel">
+  <div class="education-container">
+    <h2>Education Programs</h2>
+    <p class="intro">
+      Our education initiatives are designed to equip learners with real-world skills, practical knowledge, and the confidence to lead in today’s dynamic environment. Whether you're a student, educator, or lifelong learner, we have something for you.
+    </p>
+
+    <div class="courses-grid">
+      <div class="course-card">
+        <h3>Web Development Bootcamp</h3>
+        <p>Master HTML, CSS, JavaScript, and backend integration with hands-on projects and expert guidance.</p>
+      </div>
+      <div class="course-card">
+        <h3>Business Communication</h3>
+        <p>Learn how to communicate professionally, craft compelling content, and present ideas with clarity and impact.</p>
+      </div>
+      <div class="course-card">
+        <h3>Entrepreneurship Essentials</h3>
+        <p>Explore the fundamentals of launching and managing a business—from ideation to execution.</p>
+      </div>
+      <div class="course-card">
+        <h3>Career Readiness</h3>
+        <p>Build your resume, prepare for interviews, and develop the soft skills needed to thrive in any workplace.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <p>Ready to start learning? Browse our programs or enroll today to take the next step in your journey.</p>
+      <button>View All Courses</button>
+      <button>Enroll Now</button>
+    </div>
+  </div>
+</section>
+<head> 
+<style>
+    body {
+    font-family:'Sans-serif';
+    text-align: center;
+    margin: 0px;
+    padding: 50px 30px;
+    background-color: linear-gradient(to right, #74ebd5, #9face6);
+   }
+/*
+.hero {
+  color: rgba(0, 0, 0, 0.716);
+  background-attachment: fixed;
+  padding: 50px;
+  background:  linear-gradient(to right, #74ebd5, #9face6);
+}
+
+header { 
+color: rgb(255, 255, 255);
+align-self: center;
+border: 20px 50px;
+margin-top: 10px;
+background: linear-gradient(to right, #74ebd5, #9face6);
+}
+*/
+
+   
+   body {
+  margin: 0px;
+  font-family:'Sans-serif';
+  text-align: center;
+  padding: 0px;
+  background: linear-gradient(to right, #74ebd5, #9face6);
+}
+
+.navbar {
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: #ffffffc8;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #738ea32a;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(75, 91, 123, 0.136);
+  z-index: -1;
+  transform: scaleY(0.6);
+  opacity: 0;
+  transition: transform 0.24s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.2s;
+}
+
+.navbar a:hover::before,
+.navbar a:focus::before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 25px;
+}
+
+.navbar a {
+  display: block;
+  padding: 15px 0;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #2f83cd;
+  transform: scale(1.20);
+}
+
+.content {
+  padding-top: 40px;
+  height: 2000px;
+} 
+  .education-panel {
+    background-color: #9face6;
+    padding: 66px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+  }
+
+  .education-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .education-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+
+  .intro {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .course-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .course-card h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+  }
+
+  .course-card p {
+    color: #ffffff;
+    font-size: 0.95em;
+  }
+
+  .cta p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .cta button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .cta button:hover {
+    background-color: #2980b9;
+  }
+    body {
+  margin: 0px;
+  font-family:'Sans-serif';
+}
+
+.navbar {
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: #ffffffc8;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #738ea32a;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(75, 91, 123, 0.136);
+  z-index: -1;
+  transform: scaleY(0.6);
+  opacity: 0;
+  transition: transform 0.24s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.2s;
+}
+
+.navbar a:hover::before,
+.navbar a:focus::before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  display: block;
+  padding: 15px 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #2f83cd;
+  transform: scale(1.20);
+}
+
+.content {
+  padding-top: 40px;
+  height: 2000px;
+}
+
+ .navbar-b {
+            color: rgba(91, 200, 214, 0.895);
+            background-color: #738ea32a;
+             background-size: 10px;
+        }
+</style>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="education.html" class="navbar-b">Education</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="t&c.html">Terms & Conditions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="login.html">Login</a></li>  
+    </ul>
+  </nav>
+ 
+<script>
+  window.addEventListener('scroll', function () {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+</script>
+
+  </body>
+</html>

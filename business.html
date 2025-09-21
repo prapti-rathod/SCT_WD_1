@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+  <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help</title>
+
+
+
+
+<head>
+    <style>
+  .business-panel {
+    background-color: #9face6;
+    padding: 66px 20px;
+    margin: 0px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+  }
+
+body {
+  margin: 0px;
+}
+  .business-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .business-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .intro {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .service-card h3 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+  }
+
+  .service-card p {
+    color: #666;
+    font-size: 0.95em;
+  }
+
+  .cta p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .cta button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .cta button:hover {
+    background-color: #357ab8;
+  }
+
+.navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            
+            background-color: #fafafae0;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
+        .navbar a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            background: #738ea32a;
+            border-radius: 5px;
+            box-shadow: 0px 5px 10px rgba(75, 91, 123, 0.136);
+            z-index: -1;
+            transform: scaleY(0.6);
+            opacity: 0;
+            transition: transform 0.24s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.2s;
+            
+        }
+        .navbar a:hover::before,
+        .navbar a:focus::after {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            margin: 0 20px;
+        }
+        .navbar a {
+            display: block;
+            padding: 15px 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+       .navbar a:hover {
+            color: #2f83cd;
+            transform: scale(1.20);
+        }
+        .content {
+            padding-top: 40px;
+            height: 2000px;
+        }
+        .navbar-b {
+            color: rgba(91, 200, 214, 0.895);
+            background-color: #738ea32a;
+             background-size: 10px;
+        }
+</style>
+
+</head>
+
+
+<body>
+   <section class="business-panel">
+  <div class="business-container">
+    <h2>Business Solutions</h2>
+    <p class="intro">
+      We empower entrepreneurs, educators, and startups with strategic tools and insights to grow smarter and faster. Whether you're launching a new venture or scaling an existing one, our business programs are designed to help you thrive.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Startup Strategy</h3>
+        <p>From ideation to execution, we guide you through every stage of building a sustainable business model.</p>
+      </div>
+      <div class="service-card">
+        <h3>Digital Marketing</h3>
+        <p>Learn how to build your brand online, attract customers, and convert leads using proven marketing techniques.</p>
+      </div>
+      <div class="service-card">
+        <h3>Financial Literacy</h3>
+        <p>Master budgeting, forecasting, and investment planning to make informed decisions for long-term growth.</p>
+      </div>
+      <div class="service-card">
+        <h3>Leadership & Team Building</h3>
+        <p>Develop essential leadership skills and foster a collaborative culture that drives innovation and results.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <p>Ready to elevate your business? Join our programs or book a consultation today.</p>
+      <button>Explore Business Courses</button>
+      <button>Schedule a Strategy Call</button>
+    </div>
+  </div>
+</section>
+
+    <nav id="navbar" class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="business.html" class="navbar-b">Business</a></li>
+      <li><a href="t&c.html">Terms & Conditions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="login.html">Login</a></li>  
+    </ul>
+  </nav>
+
+<script>
+    window.addEventListener('scroll', function () {
+                const navbar = document.getElementById('navbar');
+                   if (window.scrollY > 50) {
+                       navbar.classList.add('scrolled');
+                   } else {
+                      navbar.classList.remove('scrolled');
+                   }
+                });
+</script>
+
+  </body>
+</html>
